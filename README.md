@@ -1,5 +1,5 @@
 # Rock, Paper, and Scissors Image Classification Using CNN TensorFlow
-Little project for my submission of my learning in Dicoding about machine learning to classify image of rock, paper, and scissors with Convolutional Neural Network (CNN). To build the model, we will be going to use Python with TensorFlow and Keras. I'm using Google Colab notebook to run my code, so we better to use Google Colab if you want to try my code.
+A small project for my submission of my learning in Dicoding about machine learning to classify image of rock, paper, and scissors with Convolutional Neural Network (CNN). To build the model, we will use Python with TensorFlow and Keras. I also applied hyperparameter tuning to help find the optimal model using Keras-Tuner. I use Google Colab notebook to run my code, so I recommend to use Google Colab if you want to try my code.
 
 The dataset that I used for this project is [this dataset](https://www.kaggle.com/datasets/drgfreeman/rockpaperscissors) from Kaggle. The dataset is large so it can not be uploaded to GitHub so I suggest you to download the dataset if you want to run it locally or download directly from Google Colab.
 
@@ -7,6 +7,7 @@ The dataset that I used for this project is [this dataset](https://www.kaggle.co
 Library that I used for this project are below.
 * TensorFlow
 * Keras
+* Keras-Tuner
 * Matplotlib
 * Numpy
 * Google.Colab (To upload images for testing the model)
@@ -26,8 +27,8 @@ There are several steps in this project as stated below:
   After we extract the dataset, next we will do data preprocessing such as image augmentation and traing and validation data split.
 * CNN Modelling
   
-  The next step is building the CNN model. With Sequential model from TensorFlow and Keras, we determine the layers, number of neurons, activation function, loss function, and optimisation function.
-* Model Training
+  The next step is building the CNN model. I use hyperparameter tuning to help find the best parameter so we can get the optimal model. Parameters that we will search are number of layers, neuron units, kernel size, and optimizer function.
+* Model Re-Training
 
   After model building then we do the training. (Make sure to use GPU, if not it will take a long time)
 * Model Evaluation
@@ -40,4 +41,6 @@ There are several steps in this project as stated below:
 You may check my notebook for the detail of every steps.
 
 # Conclusion
-That was it, the Image Classification Project of Rock, Paper, Scissors has completed. We achieved 96% accuracy, which is pretty high. Our model also successfully detect the images correctly with the image we uploaded. Although, not every time the model will correctly predict the image but it's alright as we can always improve the model by adding new data or tune our model. Thank you for visiting my page if you have any further discussion or suggestion you may contact me! (A star would be very appreciated!)
+That was it, the Image Classification Project of Rock, Paper, Scissors has been completed. We achieved 96% accuracy, which is pretty high. We also succesfully implemented hyper parameter tuning. Hyperparameter Tuning proves beneficial if we are uncertain regarding the selection of parameters and optimal number of layers for our model. While this may help to do 'semi-automation' in the search for the best configuration. However, it is important to note that hyperparameter tuning can be computationally expensive. As you can see, it takes quite some time to building the tuner, searching the best parameter, and re-training so it might takes some consideration to use this. A high performance PC is recommended due it will take high computational resources to train with images dataset.
+
+The model performance is quite good in detecting images with green background but it fails to detect images with different background so it may need another dataset to improve the accuracy for unseen data. Thank you for visiting my page if you have any further discussion or suggestion you may contact me! (A star would be very appreciated!)
