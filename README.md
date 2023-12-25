@@ -1,5 +1,5 @@
 # Rock, Paper, and Scissors Image Classification Using CNN TensorFlow and Hyperparameter Tuning
-A small project for my submission of my learning in Dicoding about machine learning to classify image of rock, paper, and scissors with Convolutional Neural Network (CNN). To build the model, we will use Python with TensorFlow and Keras. I also applied hyperparameter tuning to help find the optimal model using Keras-Tuner. I use Google Colab notebook to run my code, so I recommend to use Google Colab if you want to try my code.
+A project for my submission of my learning in Dicoding about machine learning to classify image of rock, paper, and scissors with Convolutional Neural Network (CNN). To build the model, we will use Python with TensorFlow and Keras. I also applied hyperparameter tuning to help find the optimal model using Keras-Tuner. I use Google Colab notebook to run my code, so I recommend to use Google Colab if you want to try my code.
 
 The dataset that I used for this project is [this dataset](https://www.kaggle.com/datasets/drgfreeman/rockpaperscissors) from Kaggle. The dataset is large so it can not be uploaded to GitHub so I suggest you to download the dataset if you want to run it locally or download directly from Google Colab.
 
